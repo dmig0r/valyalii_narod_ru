@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>М.Н. Вялый — Советские математические кружки в жизни общества (1993)</title>
+    <style>
+        :root {
+            --bg-color: #fcfbf7;
+            --text-color: #1a1a1a;
+            --accent-color: #a31d1d;
+            --secondary-color: #4a4a4a;
+            --border-color: #d3d3d3;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Georgia", serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        header {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 0;
+            border-bottom: 2px solid var(--text-color);
+        }
+
+        .logo {
+            font-family: monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--text-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: normal;
+            margin-bottom: 30px;
+            color: var(--accent-color);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2sfr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 2.2rem; }
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-size: 1.1rem;
+        }
+
+        .chapters-list {
+            list-style: none;
+        }
+
+        .chapters-list li {
+            padding: 20px 0;
+            border-bottom: 1px dashed var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .chapter-num {
+            font-family: sans-serif;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-right: 20px;
+        }
+
+        .author-box {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 150px;
+            height: 150px;
+            background-color: var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Архив незамеченной классики // 1993</div>
+        <h1>Советские математические кружки в жизни общества</h1>
+        <div class="subtitle">Монография М. Н. Вялого о том, как абстрактная наука спасала человеческое достоинство.</div>
+        <a href="#about" class="btn">Читать аннотацию</a>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>О книге</h2>
+            <div class="about-grid">
+                <div>
+                    <p>Написанная на изломе эпох, в 1993 году, эта работа Михаила Николаевича Вялого предлагает уникальный взгляд на феномен советского математического образования. Автор рассматривает маткружки не как кузницу кадров для ВПК, а как уникальную <strong>социальную экосистему</strong>.</p>
+                    <blockquote>
+                        «В условиях жесткого идеологического пресса математика оставалась едва ли не единственной зоной абсолютной честности. Нельзя было сфальсифицировать доказательство теоремы в угоду решения Пленума ЦК».
+                    </blockquote>
+                    <p>Книга исследует, как неформальные интеллектуальные сообщества формировали у советской молодежи критическое мышление, горизонтальные связи и иммунитет к пропаганде.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="chapters">
+            <h2>Краткое оглавление</h2>
+            <ul class="chapters-list">
+                <li>
+                    <div>
+                        <span class="chapter-num">01</span>
+                        <strong>Глава I. Острова логики в океане идеологии</strong>
+                        <p style="color: var(--secondary-color); margin-top: 5px;">Как кружковое движение 1930-1960-х годов создало параллельную систему ценностей.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="chapter-num">02</span>
+                        <strong>Глава II. Анатомия Олимпиады</strong>
+                        <p style="color: var(--secondary-color); margin-top: 5px;">Математические соревнования как социальный лифт и спорт высоких достижений.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="chapter-num">03</span>
+                        <strong>Глава III. Язык свободы</strong>
+                        <p style="color: var(--secondary-color); margin-top: 5px;">Почему строгость математического мышления оказалась несовместима с тоталитарным дискурсом.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="chapter-num">04</span>
+                        <strong>Глава IV. Наследие 1993-го</strong>
+                        <p style="color: var(--secondary-color); margin-top: 5px;">Куда уходят смыслы, когда рушатся империи, и что кружки могут дать новому обществу.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="author">
+            <h2>Об авторе</h2>
+            <div class="author-box">
+                <div class="author-avatar">∑</div>
+                <div>
+                    <h3>Михаил Николаевич Вялый</h3>
+                    <p style="margin-top: 10px;">В этой реальности — проницательный историк науки, социолог и математик. В нашей реальности — кандидат физико-математических наук, известный исследователь в области дискретной математики, теории сложности и комбинаторики, воспитавший не одно поколение студентов.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 1993–2026 Издательство «Интеллектуальное убежище» (Fictional). Сайт-памятник несуществующей, но очень нужной книге.</p>
+    </footer>
+
+</body>
+</html>
